@@ -1,0 +1,18 @@
+/* Both */
+html, body {
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+body {
+    background: #ccc ;
+}
+
+section {
+    box-sizing: border-box; /* or not */
+    margin: 0 auto;
+    width: 25rem;
+    background: white;
+    padding: 30px;
+    padding-bottom: 60px;
+}
