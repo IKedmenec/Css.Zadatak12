@@ -24,7 +24,7 @@ section {
     /* add back section padding value */
 
 padding: .25rem 30px;
-background: black
+background: black;
 color: white;
 font-size: 1.125rem;
 }
