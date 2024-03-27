@@ -16,3 +16,34 @@ section {
     padding: 30px;
     padding-bottom: 60px;
 }
+
+.full-width {
+    position: relative; /* child absolute */
+    /* negative offset = section padding */
+    margin: 0 -30px;
+    /* add back section padding value */
+
+padding: .25rem 30px;
+background: black
+color: white;
+font-size: 1.125rem;
+}
+
+.full-width::before, .full-width::after {
+    content: "";
+    position: absolute;
+    /* fill vertically */
+    top: 0;
+    bottom: 0;
+    width: 960px; /* ukoliko je sirina premala kod resize ekrana nece bit dobro,
+    stavimo na vecu brojku */
+    right: 100%;
+    background: red;
+}
+
+.full-width::after {
+    width: 960px; /* takoder i kod ovoga ukoliko je sirina premala kod resize ekrana nece biti dobro, stavimo na vecu brojku */
+    left: 100%;
+    /* not browser prefixed */
+    background: green;
+}
